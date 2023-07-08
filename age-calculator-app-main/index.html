@@ -17,24 +17,27 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <form action="#">
-      <div class="day">
-        <label for="day">day</label>
-        <input type="number" id="day" />
+    <div class="container">
+      <form action="#">
+        <div class="day">
+          <label for="day">day</label>
+          <input type="number" id="day" />
+        </div>
+        <div class="month">
+          <label for="month">month</label>
+          <input type="number" id="month" />
+        </div>
+        <div class="year">
+          <label for="year">year</label>
+          <input type="number" id="year" />
+        </div>
+      </form>
+      <hr />
+      <div class="results">
+        <div class="years">--years</div>
+        <div class="months">--months</div>
+        <div class="days">--days</div>
       </div>
-      <div class="month">
-        <label for="month">month</label>
-        <input type="number" id="month" />
-      </div>
-      <div class="year">
-        <label for="year">year</label>
-        <input type="number" id="year" />
-      </div>
-    </form>
-    <div class="results">
-      <div class="years">years</div>
-      <div class="months">months</div>
-      <div class="days">days</div>
     </div>
   </body>
 </html>
