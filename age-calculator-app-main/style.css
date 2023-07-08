@@ -24,7 +24,7 @@ body {
 .container {
   background-color: var(--white);
   margin: 100px auto;
-  width: 500px;
+  width: 420px;
   border-radius: 25px 25px 50px 25px;
   padding: 2rem;
 }
@@ -66,4 +66,27 @@ form label {
   color: var(--smokey-grey);
   letter-spacing: 3px;
   font-size: 0.8rem;
+}
+.line-button {
+  margin: 2rem 0 1rem 0;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+.line {
+  height: 1px;
+  border: none;
+  background-color: var(--light-grey);
+  width: 90%;
+}
+.line-button button {
+  border-radius: 50%;
+  background-color: var(--purple);
+  border: none;
+  padding: 5px;
+}
+.results {
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 800;
 }
