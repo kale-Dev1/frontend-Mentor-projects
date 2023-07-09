@@ -90,7 +90,7 @@ form label {
   font-size: 3rem;
   font-weight: 800;
 }
-.number {
+.results span {
   color: var(--purple);
   margin-right: 5px;
 }
