@@ -90,3 +90,6 @@ form label {
   font-size: 3rem;
   font-weight: 800;
 }
+.number {
+  color: var(--purple);
+}
