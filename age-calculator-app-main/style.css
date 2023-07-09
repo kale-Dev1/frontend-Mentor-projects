@@ -92,4 +92,5 @@ form label {
 }
 .number {
   color: var(--purple);
+  margin-right: 5px;
 }
