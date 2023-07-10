@@ -21,15 +21,33 @@
       <form action="#" id="birthday-form">
         <div class="day">
           <label for="day">day</label>
-          <input type="number" id="day" />
+          <input
+            type="number"
+            id="day"
+            data-maxlength="2"
+            oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+          />
+          <span class="error day-error">Must be a valid date</span>
         </div>
         <div class="month">
           <label for="month">month</label>
-          <input type="number" id="month" />
+          <input
+            type="number"
+            id="month"
+            data-maxlength="2"
+            oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+          />
+          <span class="error month-error">Must be a valid month</span>
         </div>
         <div class="year">
           <label for="year">year</label>
-          <input type="number" id="year" />
+          <input
+            type="number"
+            id="year"
+            data-maxlength="4"
+            oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+          />
+          <span class="error year-error">Must be a valid year</span>
         </div>
       </form>
       <div class="line-button">
