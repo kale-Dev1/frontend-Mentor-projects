@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="#">
+      <form action="#" id="birthday-form">
         <div class="day">
           <label for="day">day</label>
           <input type="number" id="day" />
@@ -34,14 +34,14 @@
       </form>
       <div class="line-button">
         <div class="line"></div>
-        <button class="enter-btn">
+        <button class="enter-btn" type="submit" form="birthday-form">
           <img src="assets/images/icon-arrow.svg" alt="button" />
         </button>
       </div>
       <div class="results">
-        <div><span class="years">--</span>years</div>
-        <div><span class="months">--</span>months</div>
-        <di><span class="days">--</span>days</di>
+        <div class="entered-year"><span class="years">--</span>years</div>
+        <div class="entered-month"><span class="months">--</span>months</div>
+        <div class="entered-day"><span class="days">--</span>days</div>
       </div>
     </div>
   </body>
