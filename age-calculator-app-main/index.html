@@ -22,32 +22,35 @@
         <div class="day">
           <label for="day">day</label>
           <input
+            placeholder="DD"
             type="number"
             id="day"
             data-maxlength="2"
             oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
           />
-          <span class="error day-error">Must be a valid date</span>
+          <span class="error day-error"></span>
         </div>
         <div class="month">
           <label for="month">month</label>
           <input
+            placeholder="MM"
             type="number"
             id="month"
             data-maxlength="2"
             oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
           />
-          <span class="error month-error">Must be a valid month</span>
+          <span class="error month-error"></span>
         </div>
         <div class="year">
           <label for="year">year</label>
           <input
+            placeholder="YYYY"
             type="number"
             id="year"
             data-maxlength="4"
             oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
           />
-          <span class="error year-error">Must be a valid year</span>
+          <span class="error year-error"></span>
         </div>
       </form>
       <div class="line-button">
