@@ -11,6 +11,7 @@ const years = document.querySelector(".years");
 const months = document.querySelector(".months");
 const days = document.querySelector(".days");
 
+const todayDate = new Date();
 function runError() {
   [...labels].forEach((label) => (label.style.color = "red"));
   [...inputs].forEach((input) => (input.style.borderColor = "red"));
@@ -29,6 +30,7 @@ button.addEventListener("click", function (e) {
 
   e.preventDefault();
 
+  // Year verify
   function checkYear(birthYear) {
     if (birthYear === "" || birthYear > 2023 || birthYear < 1000) {
       yearError.textContent = "Enter a valid year";
@@ -39,6 +41,7 @@ button.addEventListener("click", function (e) {
     return true;
   }
 
+  // Month verify
   function checkMonth(birthMonth) {
     if (birthMonth === "" || birthMonth > 12) {
       monthError.textContent = "Enter a valid Month";
@@ -56,6 +59,10 @@ button.addEventListener("click", function (e) {
   // fUNCTION TO ADD yEARS TO THE PAGE
   const birthdate = [birthYear, birthMonth, birthDay];
   const age = calculateAge(birthdate.join(","));
+
+  if (new Date(birthdate) > todayDate) {
+    runError();
+  }
   function addYears() {
     years.textContent = age.years;
     months.textContent = age.months;
