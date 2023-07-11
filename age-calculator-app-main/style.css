@@ -97,9 +97,10 @@ form label {
 .enter-btn:hover {
   background-color: black;
 }
+
 .error {
   font-size: 10px;
   font-style: italic;
   color: red;
-  border: 1px solid red;
+  border: 1px solid white;
 }
